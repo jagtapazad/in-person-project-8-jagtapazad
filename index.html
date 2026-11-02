@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Week 12 Enhanced</title>
+    <title>Azad Jagtap - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <h2>My Portfolio</h2>
+                <h2>Azad Jagtap</h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
@@ -31,13 +31,15 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero animate-on-scroll">
-        <!-- TODO: Add floating shapes for background animation -->
-        <div class="container">
-            <h1 class="hero-title">Hi, I'm a Web Developer</h1>
-            <p class="hero-subtitle">Creating beautiful, interactive web experiences</p>
+        <div class="floating-shape" style="top: 10%; left: 10%; width: 80px; height: 80px; border-radius: 50%; background: var(--color-primary);"></div>
+        <div class="floating-shape" style="top: 60%; left: 80%; width: 120px; height: 120px; border-radius: 50%; background: var(--color-primary-dark);"></div>
+        <div class="floating-shape" style="top: 75%; left: 20%; width: 60px; height: 60px; border-radius: 30%; background: var(--color-primary);"></div>
+        <div class="container parallax" data-speed="0.3">
+            <h1 class="hero-title">Hi, I'm Azad Jagtap</h1>
+            <p class="hero-subtitle">Graduate Student, UC Berkeley School of Information</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary">View Projects</button>
-                <button class="btn btn-secondary">Download CV</button>
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
     </section>
@@ -48,11 +50,10 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm passionate about creating engaging web experiences that combine beautiful design with smooth functionality. With expertise in modern web technologies, I bring ideas to life through code.</p>
-                    <p>My journey in web development started with curiosity about how websites work, and has grown into a career focused on building accessible, performant, and delightful user interfaces.</p>
+                    <p>I'm a graduate student at the UC Berkeley School of Information, currently taking INFO 253A: Front-End Web Architecture.</p>
+                    <p>I'm learning semantic HTML, modern CSS layouts with Flexbox and Grid, JavaScript for the DOM, and React, and building toward interfaces that are accessible, responsive and fast.</p>
                 </div>
                 <div class="about-image">
-                    <!-- TODO: Add image with hover effect -->
                     <div class="image-placeholder">Your Photo</div>
                 </div>
             </div>
@@ -67,49 +68,47 @@
                 <!-- Project Card 1 -->
                 <div class="project-card">
                     <div class="image-wrapper">
-                        <div class="project-image">Project 1</div>
+                        <div class="project-image">Task Manager UI</div>
                         <div class="image-overlay"></div>
                     </div>
-                    <h3>E-Commerce Platform</h3>
-                    <p>A full-stack e-commerce solution with React and Node.js</p>
+                    <h3>Task Manager Interface</h3>
+                    <p>A static task manager built from a design mockup with semantic HTML and a CSS Grid layout</p>
                     <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS Grid</span>
+                        <span class="tag">Responsive</span>
                     </div>
                 </div>
 
                 <!-- Project Card 2 -->
                 <div class="project-card">
                     <div class="image-wrapper">
-                        <div class="project-image">Project 2</div>
+                        <div class="project-image">React Task Manager</div>
                         <div class="image-overlay"></div>
                     </div>
-                    <h3>Task Manager App</h3>
-                    <p>A responsive task management application with drag-and-drop</p>
+                    <h3>React Task Manager</h3>
+                    <p>The same interface rebuilt in React, with tasks in state, a controlled form and filtering</p>
                     <div class="project-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">LocalStorage</span>
+                        <span class="tag">React</span>
+                        <span class="tag">useState</span>
+                        <span class="tag">Vite</span>
                     </div>
                 </div>
 
                 <!-- Project Card 3 -->
                 <div class="project-card">
                     <div class="image-wrapper">
-                        <div class="project-image">Project 3</div>
+                        <div class="project-image">Dynamic Portfolio</div>
                         <div class="image-overlay"></div>
                     </div>
-                    <h3>Weather Dashboard</h3>
-                    <p>Real-time weather data visualization with animated charts</p>
+                    <h3>Dynamic Portfolio</h3>
+                    <p>A React portfolio with a global theme in Context and projects fetched from a REST API</p>
                     <div class="project-tags">
-                        <span class="tag">API Integration</span>
-                        <span class="tag">Chart.js</span>
-                        <span class="tag">Responsive</span>
+                        <span class="tag">Context API</span>
+                        <span class="tag">useEffect</span>
+                        <span class="tag">json-server</span>
                     </div>
                 </div>
-
-                <!-- TODO: Add more project cards -->
             </div>
         </div>
     </section>
@@ -125,18 +124,18 @@
                     <ul>
                         <li>HTML5 & CSS3</li>
                         <li>JavaScript ES6+</li>
-                        <li>React & Vue</li>
+                        <li>React</li>
                         <li>Responsive Design</li>
                     </ul>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">⚙️</div>
-                    <h3>Backend</h3>
+                    <h3>Data & APIs</h3>
                     <ul>
                         <li>Node.js</li>
-                        <li>Express</li>
                         <li>REST APIs</li>
-                        <li>Database Design</li>
+                        <li>Fetch & async/await</li>
+                        <li>JSON</li>
                     </ul>
                 </div>
                 <div class="skill-card">
@@ -145,7 +144,7 @@
                     <ul>
                         <li>Git & GitHub</li>
                         <li>VS Code</li>
-                        <li>npm/yarn</li>
+                        <li>Figma</li>
                         <li>Chrome DevTools</li>
                     </ul>
                 </div>
@@ -157,11 +156,11 @@
     <section id="contact" class="contact-section animate-on-scroll">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+            <p class="contact-subtitle">I'm always interested in hearing about new opportunities and projects. Feel free to reach out!</p>
             <div class="contact-buttons">
-                <a href="mailto:your@email.com" class="btn btn-primary">Send Email</a>
+                <a href="mailto:azadjagtap@berkeley.edu" class="btn btn-primary">Send Email</a>
                 <a href="https://linkedin.com" class="btn btn-secondary">LinkedIn</a>
-                <a href="https://github.com" class="btn btn-secondary">GitHub</a>
+                <a href="https://github.com/jagtapazad" class="btn btn-secondary">GitHub</a>
             </div>
         </div>
     </section>
@@ -169,7 +168,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 My Portfolio. Built with HTML, CSS, and JavaScript.</p>
+            <p>&copy; 2026 Azad Jagtap. Built with HTML, CSS, and JavaScript.</p>
         </div>
     </footer>
 
